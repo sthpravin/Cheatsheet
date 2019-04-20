@@ -8,3 +8,7 @@ cmake --build .
 
 check for gpu enabled dlib
 dlib.DLIB_USE_CUDA
+
+check for number of cuda enabled gpu devices
+import dlib.cuda as cuda
+print(cuda.get_num_devices())
